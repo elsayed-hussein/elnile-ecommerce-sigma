@@ -14,4 +14,9 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+  color: var(--text-color-light);
+}
+Ul,
+li {
+  list-style: none;
 }

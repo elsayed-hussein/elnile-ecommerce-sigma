@@ -1,6 +1,42 @@
 .navbar {
   &__top {
-    &--stockStatus {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--border-color-light);
+    background-color: var(--background-color-light);
+    min-height: 3rem;
+    font-size: small;
+    &StockStatus {
+      label {
+        cursor: pointer;
+      }
+    }
+    &Welcome {
+      p {
+        margin: 0;
+      }
+    }
+    &Right {
+      display: flex;
+      align-items: center;
+    }
+    &List {
+      display: flex;
+      margin: 0;
+      margin-left: 2rem;
+      padding: 0;
+      cursor: pointer;
+      &Item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem;
+        img {
+          margin-right: 0.5rem;
+          width: 1.5rem;
+        }
+      }
     }
   }
 }
