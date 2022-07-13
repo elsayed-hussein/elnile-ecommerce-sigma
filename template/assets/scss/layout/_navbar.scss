@@ -4,22 +4,23 @@
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid var(--border-color-light);
-    background-color: var(--background-color-light);
-    min-height: 3rem;
-    font-size: small;
-    &StockStatus {
-      label {
-        cursor: pointer;
+    background-color: var(--navbar-color-light);
+    min-height: 2rem;
+    font-size: 0.75rem;
+    &Tell {
+      letter-spacing: 0.1rem;
+      span {
+        margin-right: 0.1rem;
       }
     }
     &Welcome {
       p {
         margin: 0;
+        letter-spacing: 0.15rem;
+        span {
+          margin: 0 0.25rem;
+        }
       }
-    }
-    &Right {
-      display: flex;
-      align-items: center;
     }
     &List {
       display: flex;
@@ -32,11 +33,21 @@
         align-items: center;
         justify-content: center;
         margin: 0.5rem;
-        img {
-          margin-right: 0.5rem;
-          width: 1.5rem;
+        span {
+          margin-left: 0.25rem;
         }
       }
     }
+  }
+}
+@media (max-width: 1023px) {
+  .navbar__topWelcome {
+    display: none;
+  }
+}
+@media (max-width: 479px) {
+  .navbar__topListItem span,
+  .navbar__topTell span {
+    display: none;
   }
 }
