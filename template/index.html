@@ -14,8 +14,10 @@
         <meta name="description" content="eCommerce Web Store for :*******">
         <meta name='copyright' content="Elsayed Hussein">
         <meta name='robots' content='index,follow'>
-        <!-- [ ] complete cookie -->
-        <!-- <meta http-equiv = "cookie" content = "userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" /> -->
+        <!-- Font-awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,10 +76,29 @@
                     </h1>
                 </div>
                 <div class="navbar__midSearch">
-                    <input type="text">
-                    <button> Search</button>
+                    <input type="text" placeholder="Search ....">
+                    <button>
+                        Search
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
+                <div class="navbar__midCart">
+                    <div class="navbar__midCartRight">
+                        <i class="fa-brands fa-opencart"></i>
+                        <span class="navbar__midCartNum">0</span>
+                    </div>
+                    <div class="navbar__midCartLift">
+                        <h3>My Cart</h3>
+                        <p class="navbar__midCartPrice">
+                            (
+                            <span>
+                                00.00
+                            </span>
+                            LE)
+                        </p>
+                    </div>
 
+                </div>
             </nav>
             <!-- End Mid Nav -->
         </header>
