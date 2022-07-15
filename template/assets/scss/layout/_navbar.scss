@@ -62,7 +62,6 @@
       background-color: var(--navbar-color-light);
       padding: 0.25rem;
       width: 40%;
-
       border-radius: 3rem;
       form {
         display: flex;
@@ -87,6 +86,14 @@
           border: 0.05rem solid gray;
           background-color: var(--logo-color-light);
         }
+      }
+      &Btn {
+        border-radius: 3rem;
+        padding: 1rem;
+        color: var(--background-color-light);
+        border: 0.05rem solid gray;
+        background-color: var(--logo-color-light);
+        display: none;
       }
     }
     &Cart {
@@ -129,10 +136,31 @@
   .navbar__topWelcome {
     display: none;
   }
+  .navbar__midLogo {
+    font-size: 70%;
+  }
+  .navbar__midSearch {
+    width: auto;
+    form {
+      display: none;
+    }
+    &Btn {
+      display: block;
+    }
+  }
 }
 @media (max-width: 479px) {
   .navbar__topListItem span,
   .navbar__topTell span {
+    display: none;
+  }
+  .navbar__midLogo {
+    font-size: 40%;
+  }
+  .navbar__midSearchBtn span {
+    display: none;
+  }
+  .navbar__midCartLift {
     display: none;
   }
 }
