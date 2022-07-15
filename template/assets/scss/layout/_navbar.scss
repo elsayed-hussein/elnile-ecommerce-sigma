@@ -59,9 +59,34 @@
       }
     }
     &Search {
-      background-color: white;
-      input {
-        border: none;
+      background-color: var(--navbar-color-light);
+      padding: 0.25rem;
+      width: 40%;
+
+      border-radius: 3rem;
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        input {
+          &:focus {
+            outline: none;
+            border-bottom: 0.1rem dashed gray;
+          }
+          margin: 0.25rem;
+          padding: 0.5rem;
+          width: 75%;
+          border: none;
+          background-color: var(--navbar-color-light);
+        }
+        button {
+          border-radius: 3rem;
+          padding: 1rem;
+          color: var(--background-color-light);
+          border: 0.05rem solid gray;
+          background-color: var(--logo-color-light);
+        }
       }
     }
     &Cart {
